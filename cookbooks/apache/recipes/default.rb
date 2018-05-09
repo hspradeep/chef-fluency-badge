@@ -1,9 +1,9 @@
 #
-# Cookbook Name:: learn5
+# Cookbook Name:: apache
 # Recipe:: default
 #
 # Copyright (c) 2018 The Authors, All Rights Reserved.
-#Install apache package
+#
 package 'apache2' do
 	package_name 'httpd'
 	action :install
@@ -13,4 +13,3 @@ service 'apache2' do
 	service_name 'httpd'
 	action [:start, :enable]
 end
-
